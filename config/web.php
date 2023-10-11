@@ -99,6 +99,7 @@ $config = [
             	'/'=>'site/index',
                 '/not-found' => 'site/not-found',
                 'admin' => 'admin/default',
+                'blog' => 'site/posts',
                 'post/<slug>' => 'site/post',
                 'page/<slug>' => 'site/page',
                 'cat/<slug>' => 'site/cat',
