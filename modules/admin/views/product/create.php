@@ -12,6 +12,5 @@ $this->title = 'Add new post';
     <?= $this->render('_form', [
         'model' => $model,
         'catalogLists' => $catalogLists
-        
     ]) ?>
 </div>
