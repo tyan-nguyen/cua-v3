@@ -167,7 +167,7 @@ class CatelogiesController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> "Update Catelogies #".$id,
+                    'title'=> "Update Catelogies",
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
@@ -185,7 +185,7 @@ class CatelogiesController extends Controller
                             Html::a('Edit',['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
                 ];   */  
                 return [
-                    'title'=> "Update Catelogies #".$id,
+                    'title'=> "Update Catelogies",
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                         'status'=>'success'
@@ -195,7 +195,7 @@ class CatelogiesController extends Controller
                 ];    
             }else{
                  return [
-                    'title'=> "Update Catelogies #".$id,
+                    'title'=> "Update Catelogies",
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
