@@ -126,7 +126,8 @@ class News extends \app\models\News
      */
     public function beforeDelete()
     {
-        $this->deleteDir(Yii::getAlias('@webroot/images/posts/'). $this->code);        
+        $this->deleteDir(Yii::getAlias('@webroot/images/posts/'). $this->code);
+        $this->deleteDir(Yii::getAlias('@webroot/images/thumbs/'). $this->code);  
         parent::beforeDelete();
         return true;
     }
