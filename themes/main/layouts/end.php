@@ -45,9 +45,6 @@ use app\modules\admin\models\Page;
                 <h5 class="widget-title pb-2 text-uppercase">Cửa toàn cảnh</h5>
                 <ul class="menu-list list-unstyled mt-4">
                   <li class="menu-item pb-2">
-                    <a href="#">Danh sách sản phẩm</a>
-                  </li>
-                  <li class="menu-item pb-2">
                     <a href="<?= $setting->getUrl('tai-sao-la-chung-toi') ?>">Tại sao là chúng tôi?</a>
                   </li>
                 </ul>
