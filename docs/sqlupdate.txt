@@ -1,0 +1,23 @@
+	
+UPDATE news SET imgcover = REPLACE(imgcover, 'http://localhost:9999', 'http://cuanhom-v3.nguyentrinhtravinh.com.vn');
+
+UPDATE news SET summary = REPLACE(summary, 'http://localhost:9999', 'http://cuanhom-v3.nguyentrinhtravinh.com.vn');
+
+UPDATE news SET content = REPLACE(content, 'http://localhost:9999', 'http://cuanhom-v3.nguyentrinhtravinh.com.vn');
+
+
+
+
+UPDATE news_catelogies SET summary = REPLACE(summary, 'http://localhost:9999', 'http://cuanhom-v3.nguyentrinhtravinh.com.vn');
+UPDATE news_catelogies SET img_phoi_canh = REPLACE(img_phoi_canh, 'http://localhost:9999', 'http://cuanhom-v3.nguyentrinhtravinh.com.vn');
+UPDATE news_catelogies SET img_cua = REPLACE(img_cua, 'http://localhost:9999', 'http://cuanhom-v3.nguyentrinhtravinh.com.vn');
+UPDATE news_catelogies SET img_thiet_ke = REPLACE(img_thiet_ke, 'http://localhost:9999', 'http://cuanhom-v3.nguyentrinhtravinh.com.vn');
+
+
+
+UPDATE product_colors SET thumbnail = REPLACE(thumbnail, 'http://localhost:9999', 'http://cuanhom-v3.nguyentrinhtravinh.com.vn');
+UPDATE product_colors SET image = REPLACE(image, 'http://localhost:9999', 'http://cuanhom-v3.nguyentrinhtravinh.com.vn');
+
+
+UPDATE product_images SET thumbnail = REPLACE(thumbnail, 'http://localhost:9999', 'http://cuanhom-v3.nguyentrinhtravinh.com.vn');
+UPDATE product_images SET image = REPLACE(image, 'http://localhost:9999', 'http://cuanhom-v3.nguyentrinhtravinh.com.vn');
