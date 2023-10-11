@@ -17,7 +17,6 @@ return [
     // ],
     [
         'class'=>'\kartik\grid\DataColumn',
-        'header'=>'',
         'attribute'=>'thumbnail',
         'format'=>'raw',
         'value'=>function($model){
@@ -34,6 +33,7 @@ return [
             ],
     [
         'class' => 'kartik\grid\ActionColumn',
+        'header'=>'',
         'dropdown' => false,
         'vAlign'=>'middle',
         'urlCreator' => function($action, $model, $key, $index) { 
