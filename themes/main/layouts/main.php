@@ -34,7 +34,7 @@ $setting = Settings::find()->one();
 <?php /* $this->render('product2') */ ?>
 
 <!-- <div class="container-fluid border-top"></div> -->
-<?= $this->render('call-brand') ?>
+<?= $this->render('call-brand', compact('setting')) ?>
 
 <?= $this->render('article', ['title'=>'Thông tin mới nhất']) ?>
 
