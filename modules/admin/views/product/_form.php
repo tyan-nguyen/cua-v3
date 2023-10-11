@@ -81,9 +81,10 @@ use app\modules\admin\models\TagList;
 		</div>
     </div>
     
-    <?php if(!$model->isNewRecord){ ?>
+    
     <div class="form-group">
     	<label>Phiên bản</label>
+    	<?php if(!$model->isNewRecord){ ?>
     	<div class="">
 			<?= $this->render('../product-color/index', [
 					'dataProvider'=>$colorProvider,
@@ -91,12 +92,15 @@ use app\modules\admin\models\TagList;
 			        'idProduct'=>$model->id
 			]) ?>
 		</div>
+		<?php } else { ?>
+        <div class="alert alert-info" role="alert">Please save first to create version of this product!</div>
+        <?php } ?>
     </div>
-    <?php } ?>
     
-    <?php if(!$model->isNewRecord){ ?>
+    
     <div class="form-group">
     	<label>Hình ảnh</label>
+    	<?php if(!$model->isNewRecord){ ?>
     	<div class="">
 			<?= $this->render('../product-image/index', [
 					'dataProvider'=>$imageProvider,
@@ -104,8 +108,11 @@ use app\modules\admin\models\TagList;
 			        'idProduct'=>$model->id
 			]) ?>
 		</div>
+		 <?php } else { ?>
+        <div class="alert alert-info" role="alert">Please save first to add images to this product!</div>
+        <?php } ?>
     </div>
-    <?php } ?>
+   
     
 
     
