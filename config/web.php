@@ -8,6 +8,10 @@ $config = [
     'bootstrap' => ['log'],
     'language'=>'vi',
     'timeZone' => 'Asia/Ho_Chi_Minh',
+    'aliases' => [
+        '@bower' => '@vendor/bower-asset',
+        '@npm'   => '@vendor/npm-asset',
+    ],
     'modules' => [
         'admin' => [
             'class' => 'app\modules\admin\admin',
