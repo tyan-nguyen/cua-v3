@@ -10,5 +10,6 @@ use yii\helpers\Html;
 <div class="product-images-create">
     <?= $this->render('_form', [
         'model' => $model,
+        'idProduct'=>$idProduct
     ]) ?>
 </div>

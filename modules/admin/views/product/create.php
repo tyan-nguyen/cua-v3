@@ -11,7 +11,6 @@ $this->title = 'Add new post';
 <div class="news-create">
     <?= $this->render('_form', [
         'model' => $model,
-        'catalogLists' => $catalogLists,
-        'idProduct'=>$idProduct
+        'catalogLists' => $catalogLists
     ]) ?>
 </div>
