@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /user-management/
+Disallow: /tailieuhoinghi/
+Disallow: /view/print/
+Allow: /tailieuhoinghi/danh-sach/

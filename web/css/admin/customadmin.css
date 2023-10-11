@@ -1,0 +1,44 @@
+.error-summary{
+	color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.list-catalog {
+    max-height: 250px;
+    max-width: 100%;
+    overflow-y: scroll;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+#dCover img{
+	max-width: 100%;
+	height:auto;
+}
+
+.sButton, .sButtonGroup {
+    cursor: pointer;
+}
+
+.img-small-thumb{
+	width:70px;
+}
+.img-small-color{
+	width:50px;
+	border-radius: 40px;
+	border: 1px solid #ddd;
+}
+.img-small-color:hover{
+	width:50px;
+	border-radius: 40px;
+	border: 1px solid red;
+	cursor: pointer;
+}
+.img-small{
+	width:100px;
+}
