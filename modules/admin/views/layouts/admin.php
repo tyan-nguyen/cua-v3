@@ -382,67 +382,20 @@ AppAsset::register($this);
 <!-- AdminLTE App -->
 <script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/dist/js/pages/dashboard.js"></script>
+<!-- <script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/dist/js/pages/dashboard.js"></script> -->
 <!-- AdminLTE for demo purposes -->
-<script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/dist/js/demo.js"></script>
+<!-- <script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/dist/js/demo.js"></script>-->
 <script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/dist/js/custom.js"></script>
 
 
  <script>
-			$("a[href='<?= Yii::$app->request->url ?>']").parent().addClass('active');
-			$("a[href='<?= Yii::$app->request->url ?>']").parent().parent().parent().addClass('active');
-
-      </script>
-<script>
-/*
-
-Morris.Line({
-	  element: 'line-chart',
-	  data: [
-	    { y: '2006-01-01', a: 100, b: 90 },
-	    { y: '2006-01-02', a: 75,  b: 65 },
-	    { y: '2006-01-03', a: 50,  b: 40 },
-	    { y: '2006-01-04', a: 75,  b: 65 },
-	    { y: '2006-01-05', a: 50,  b: 40 },
-	    { y: '2006-01-06', a: 75,  b: 65 },
-	    { y: '2006-01-07', a: 100, b: 90 }
-	  ],
-	  xkey: 'y',
-	  ykeys: ['a'],
-	  labels: ['Series A']
-	});
-*/
-
-<?php
-	$dayArrs = \app\models\PcounterByDay::find()->orderBy('day DESC')->limit(7)->all();
-?>
-// LINE CHART
-var line = new Morris.Line({
-  element: 'line-chart',
-  data: [
-	<?php
-		foreach ($dayArrs as $i=>$day){
-			echo "{y: '".$day->day."', item1: $day->user},";
-		}
-	?>
-	{y: '<?= date('Y-m-d') ?>', item1: <?= number_format(Yii::$app->userCounter->getToday()) ?>},
-  ],
-  xkey: 'y',
-  ykeys: ['item1'],
-  labels: ['Truy cập'],
-  xLabels: 'day',
- /* lineColors: ['#3c8dbc'],
-  hideHover: 'auto',
-  resize: true*/
-});
-
-</script>
-
-<script>
-//Date range picker
-$('#txtSearchTuNgay').daterangepicker({
-	locale: { format: 'DD/MM/YYYY' }
-});
+	$("a[href='<?= Yii::$app->request->url ?>']").parent().addClass('active');
+	$("a[href='<?= Yii::$app->request->url ?>']").parent().parent().parent().addClass('active');
+    
+    //Date range picker
+    $('#txtSearchTuNgay').daterangepicker({
+    	locale: { format: 'DD/MM/YYYY' }
+    });
 
 
 </script>

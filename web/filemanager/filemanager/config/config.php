@@ -114,7 +114,8 @@ $config = array(
     | DO NOT put inside upload folder
     |
     */
-    'thumbs_upload_dir' => '/filemanager/thumbs/',
+    //'thumbs_upload_dir' => '/filemanager/thumbs/',
+    'thumbs_upload_dir' => '/images/thumbs/',
 
 
     /*
