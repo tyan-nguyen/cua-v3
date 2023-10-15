@@ -331,6 +331,10 @@ class ProductController extends Controller
                             'model' => $model,
                             'catalogLists' => $catalogLists,
                             'status'=>'success',
+                            'colorModel'=>$colorModel,
+                            'colorProvider'=>$colorProvider,
+                            'imageModel'=>$imageModel,
+                            'imageProvider'=>$imageProvider
                         ]);
                     }
                 } else {
@@ -338,6 +342,10 @@ class ProductController extends Controller
                         'model' => $model,
                         'catalogLists' => $catalogLists,
                         'status'=>'failed',
+                        'colorModel'=>$colorModel,
+                        'colorProvider'=>$colorProvider,
+                        'imageModel'=>$imageModel,
+                        'imageProvider'=>$imageProvider
                     ]);
                 }
             } else {
