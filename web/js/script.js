@@ -194,7 +194,7 @@
     // product single page
     var thumb_slider = new Swiper(".product-thumbnail-slider", {
       slidesPerView: 3,
-      spaceBetween: 0,
+      spaceBetween: 20,
       //autoplay: true,
       direction: "vertical",
       pagination: {
