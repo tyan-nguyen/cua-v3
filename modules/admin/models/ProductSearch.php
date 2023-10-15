@@ -48,7 +48,7 @@ class ProductSearch extends Product
             'query' => $query,
             'sort' => [
                 'defaultOrder'=>[
-                    'date_updated' => SORT_DESC, 
+                    //'date_updated' => SORT_DESC, 
                     'date_created' => SORT_DESC,                     
                     'id' => SORT_DESC
                 ]
