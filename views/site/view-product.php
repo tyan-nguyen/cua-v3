@@ -54,8 +54,8 @@ $allImages = ProductImages::find()->where([
             <div class="row">
               
               <div class="col-md-3 slide-hide">
-                <div class="swiper product-thumbnail-slider">
-                  <div class="swiper-wrapper" style="height:450px">
+                <div class="swiper product-thumbnail-slider" style="height:750px">
+                  <div class="swiper-wrapper" >
                   
                   	<?php if ($firstVersion != null) : ?>
                     <div class="swiper-slide">
