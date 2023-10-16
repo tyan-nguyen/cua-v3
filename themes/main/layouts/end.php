@@ -122,7 +122,7 @@ use app\modules\admin\models\Page;
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="<?= Yii::getAlias('@web')  ?>/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="<?= Yii::getAlias('@web')  ?>/js/plugins.js"></script>
-    <script type="text/javascript" src="<?= Yii::getAlias('@web')  ?>/js/script.js?v=13"></script>
-    <script type="text/javascript" src="<?= Yii::getAlias('@web')  ?>/js/custom.js?v=10"></script>
+    <script type="text/javascript" src="<?= Yii::getAlias('@web')  ?>/js/script.js?v=14"></script>
+    <script type="text/javascript" src="<?= Yii::getAlias('@web')  ?>/js/custom.js?v=11"></script>
   </body>
 </html>
