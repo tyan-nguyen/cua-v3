@@ -23,9 +23,9 @@ class ProductQuery extends \app\modules\admin\models\Product
      */
     public static function getProductByCat($cat=NULL){
         return ProductQuery::getProductPublic($cat)->orderBy([
-            'date_updated' => SORT_DESC,
-            'date_created' => SORT_DESC,
-            'id' => SORT_DESC
+            //'date_updated' => SORT_DESC,
+            //'date_created' => SORT_DESC,
+            'id' => SORT_ASC
         ])->all();
     }
     
