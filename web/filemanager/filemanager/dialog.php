@@ -969,6 +969,8 @@ $files = $sorted;
                     <input type="hidden" class="path" value="<?php echo str_replace('.','',dirname($rfm_subfolder.$subdir));?>"/>
                     <input type="hidden" class="path_thumb" value="<?php echo dirname($thumbs_path)."/";?>"/>
                 <?php } ?>
+                
+                <!-- 
                 <a class="folder-link" href="dialog.php?<?php echo $get_params.rawurlencode($src)."&".($callback?'callback='.$callback."&":'').uniqid() ?>">
                     <div class="img-precontainer">
                             <div class="img-container directory"><span></span>
@@ -989,6 +991,8 @@ $files = $sorted;
 
             <?php }else{ ?>
                     </a>
+                    
+                    --> <!-- an add -->
                     <div class="box">
                     <h4 class="<?php if($config['ellipsis_title_after_first_row']){ echo "ellipsis"; } ?>"><a class="folder-link" data-file="<?php echo $file ?>" href="dialog.php?<?php echo $get_params.rawurlencode($src)."&".uniqid() ?>"><?php echo $file;?></a></h4>
                     </div>
