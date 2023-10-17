@@ -43,6 +43,8 @@ AppAsset::register($this);
   
   <!-- jQuery 3 -->
 <script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/bower_components/jquery-ui/jquery-ui.min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -353,8 +355,7 @@ AppAsset::register($this);
 <!-- ./wrapper -->
 
 
-<!-- jQuery UI 1.11.4 -->
-<script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
 <script type="text/javascript">
     jQuery.browser = {};
     (function () {
