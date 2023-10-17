@@ -355,6 +355,17 @@ AppAsset::register($this);
 
 <!-- jQuery UI 1.11.4 -->
 <script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    jQuery.browser = {};
+    (function () {
+        jQuery.browser.msie = false;
+        jQuery.browser.version = 0;
+        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+            jQuery.browser.msie = true;
+            jQuery.browser.version = RegExp.$1;
+        }
+    })();
+</script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);
