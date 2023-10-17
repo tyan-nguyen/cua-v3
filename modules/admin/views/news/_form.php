@@ -15,7 +15,9 @@ use app\modules\admin\models\TagList;
     }
 ?>
 
-
+<!-- editor -->
+<script src="<?= Yii::getAlias('@web') ?>/assets/editor/tinymce/tinymce.min.js"></script>
+<script src="https://www.responsivefilemanager.com/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript" ></script>
 
 <div class="row">
 	<?php $form = ActiveForm::begin([
