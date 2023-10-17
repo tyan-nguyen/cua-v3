@@ -970,8 +970,9 @@ $files = $sorted;
                     <input type="hidden" class="path_thumb" value="<?php echo dirname($thumbs_path)."/";?>"/>
                 <?php } ?>
                 
-                <!-- 
-                <a class="folder-link" href="dialog.php?<?php echo $get_params.rawurlencode($src)."&".($callback?'callback='.$callback."&":'').uniqid() ?>">
+                
+                
+                <!-- <a class="folder-link" href="dialog.php?<?php echo $get_params.rawurlencode($src)."&".($callback?'callback='.$callback."&":'').uniqid() ?>">  --><!-- an add -->
                     <div class="img-precontainer">
                             <div class="img-container directory"><span></span>
                             <img class="directory-img" data-src="img/<?php echo $config['icon_theme'];?>/folder<?php if($file==".."){ echo "_back"; }?>.png" />
@@ -987,12 +988,12 @@ $files = $sorted;
                     <div class="box no-effect">
                     <h4><?php echo trans('Back') ?></h4>
                     </div>
-                    </a>
+                    <!-- </a> --> <!-- an add -->
 
             <?php }else{ ?>
-                    </a>
+                   <!-- </a> --> <!-- an add -->
                     
-                    --> <!-- an add -->
+                   
                     <div class="box">
                     <h4 class="<?php if($config['ellipsis_title_after_first_row']){ echo "ellipsis"; } ?>"><a class="folder-link" data-file="<?php echo $file ?>" href="dialog.php?<?php echo $get_params.rawurlencode($src)."&".uniqid() ?>"><?php echo $file;?></a></h4>
                     </div>
@@ -1014,7 +1015,7 @@ $files = $sorted;
                         <i class="icon-trash <?php if(!$config['delete_folders'] || $file_prevent_delete) echo 'icon-white';?>"></i>
                         </a>
                     </figcaption>
-            <?php } ?>
+            <?php }  ?>
                 </figure>
             </li>
             <?php
