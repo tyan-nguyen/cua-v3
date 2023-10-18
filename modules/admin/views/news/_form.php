@@ -53,7 +53,7 @@ use app\modules\admin\models\TagList;
 	<?php if($page==false):?>
 	
 	 <?php $nameLabel = $model->getAttributeLabel('imgcover') 
-    	. ' <a data-toggle="modal"  href="javascript:;" data-target="#myModal" class="btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' ?>
+    	. ' <a data-toggle="modal"  href="#" data-target="#myModal" class="btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' ?>
 	 
 	 <?= $form->field($model, 'imgcover')->textInput(['maxlength' => true, 'id'=>'fieldID4'])->label($nameLabel) ?>
 	 
@@ -175,7 +175,7 @@ $(document).on('focusin', function(e) {
       <h4 class="modal-title">Modal title</h4>
     </div>
     <div class="modal-body">
-      <iframe width="850" height="600" src="/filemanager/filemanager/dialog.php?type=2&field_id=fieldID4'&fldr=<?= $model->code ?>&akey=<?= User::hasRole('bientapvien') ? '1fdb7184e697ab9355a3f1438ddc6ef9' : '' ?>" frameborder="0" style="overflow: scroll; overflow-x: hidden; overflow-y: scroll; "></iframe>
+      <iframe width="850" height="600" src="/filemanager/filemanager/dialog.php?type=2&field_id=fieldID4&fldr=<?= $model->code ?>&akey=<?= User::hasRole('bientapvien') ? '1fdb7184e697ab9355a3f1438ddc6ef9' : '' ?>" frameborder="0" style="overflow: scroll; overflow-x: hidden; overflow-y: scroll; "></iframe>
     </div>
   </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->

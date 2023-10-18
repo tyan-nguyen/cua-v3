@@ -35,7 +35,7 @@ AppAsset::register($this);
   <link rel="stylesheet" href="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-  <link rel="stylesheet" type="text/css" href="https://www.responsivefilemanager.com/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?= Yii::getAlias('@web') ?>/filemanager/responsivefilemanager.com_fancybox_jquery.fancybox-1.3.4.css" media="screen" />
   
   <!-- custom style -->
   <link rel="stylesheet" href="<?= Yii::getAlias('@web') ?>/css/admin/customadmin.css">
@@ -43,8 +43,7 @@ AppAsset::register($this);
   
   <!-- jQuery 3 -->
 <script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/bower_components/jquery/dist/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -354,19 +353,8 @@ AppAsset::register($this);
 </div>
 <!-- ./wrapper -->
 
-
-
-<script type="text/javascript">
-    jQuery.browser = {};
-    (function () {
-        jQuery.browser.msie = false;
-        jQuery.browser.version = 0;
-        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
-            jQuery.browser.msie = true;
-            jQuery.browser.version = RegExp.$1;
-        }
-    })();
-</script>
+<!-- jQuery UI 1.11.4 -->
+<script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);
@@ -408,10 +396,10 @@ AppAsset::register($this);
 	$("a[href='<?= Yii::$app->request->url ?>']").parent().parent().parent().addClass('active');
     
     //Date range picker
-    $('#txtSearchTuNgay').daterangepicker({
+   /*  $('#txtSearchTuNgay').daterangepicker({
     	locale: { format: 'DD/MM/YYYY' }
     });
-
+ */
 
 </script>
 

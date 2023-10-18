@@ -52,9 +52,9 @@ use app\modules\admin\models\TagList;
 
 	
 	 <?php $nameLabel = $model->getAttributeLabel('imgcover') 
-    	. ' <a data-toggle="modal"  href="javascript:;" data-target="#myModal" class="btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' ?>
+    	. ' <a data-toggle="modal"  href="#" data-target="#myModal" class="btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' ?>
 	 
-	 <?= $form->field($model, 'imgcover')->textInput(['maxlength' => true, 'id'=>'fieldID4'])->label($nameLabel) ?>
+	 <?= $form->field($model, 'imgcover')->textInput(['maxlength' => true, 'id'=>'fieldID5'])->label($nameLabel) ?>
 	 
 	 <div id="dCover" class="input-append">	  
     	  <img src="<?= $model->cover ?>" />
@@ -203,11 +203,11 @@ $(document).on('focusin', function(e) {
 <div class="modal-dialog1" style="width:900px">
   <div class="modal-content" style="height:700px;">
     <div class="modal-header">
-      <button id="btnModal2" data-dismiss="modal" type="button" class="close" aria-hidden="true">&times;</button>
+      <button id="btnModal3" data-dismiss="modal" type="button" class="close" aria-hidden="true">&times;</button>
       <h4 class="modal-title">Modal title</h4>
     </div>
     <div class="modal-body">
-      <iframe width="850" height="600" src="/filemanager/filemanager/dialog.php?type=2&field_id=fieldID4'&fldr=<?= $model->code ?>&akey=<?= User::hasRole('bientapvien') ? '1fdb7184e697ab9355a3f1438ddc6ef9' : '' ?>" frameborder="0" style="overflow: scroll; overflow-x: hidden; overflow-y: scroll; "></iframe>
+      <iframe width="850" height="600" src="/filemanager/filemanager/dialog.php?type=2&field_id=fieldID5&fldr=<?= $model->code ?>&akey=<?= User::hasRole('bientapvien') ? '1fdb7184e697ab9355a3f1438ddc6ef9' : '' ?>" frameborder="0" style="overflow: scroll; overflow-x: hidden; overflow-y: scroll; "></iframe>
     </div>
   </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
@@ -221,7 +221,7 @@ function responsive_filemanager_callback(field_id){
 	//alert('update '+field_id+" with "+url);
 	//alert(url);
 	$('#dCover img').attr('src', url);
-	$('#btnModal2').click();	
+	$('#btnModal3').click();	
 }
 
 </script>

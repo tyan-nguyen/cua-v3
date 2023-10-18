@@ -1,4 +1,4 @@
-<div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+<div class="col-lg-4 col-md-6 col-sm-12 mb-5">
     <div class="card-item">
       <div class="card border-0 bg-transparent">
         <div class="card-image">
