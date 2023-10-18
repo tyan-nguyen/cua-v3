@@ -160,6 +160,11 @@ use app\modules\admin\models\Catelogies;
                 </li> -->
                 
                 <li class="nav-item">
+                  <a class="nav-link me-4" href="<?= Yii::getAlias('@web/page/catalogue-cua-nhom-nguyen-trinh') ?>">Catalogue</a>
+                </li>
+                
+                
+                <li class="nav-item">
                   <a class="nav-link me-4" href="<?= Yii::getAlias('@web/blog') ?>">Blogs</a>
                 </li>
                 
