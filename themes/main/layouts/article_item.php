@@ -11,7 +11,7 @@
         <h3 class="card-title text-uppercase">
           <a href="<?= $blog->url ?>"><?= $blog->title ?></a>
         </h3>
-        <p><?= $blog->summary150 ?></p>
+        <p><?= $blog->summary300 ?></p>
         <!-- <a href="<?= $blog->url ?>" class="btn btn-normal text-uppercase p-0"><em>Xem tiếp</em></a>-->
       </div>
     </div>
